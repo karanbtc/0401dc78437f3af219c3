@@ -51,6 +51,7 @@ class UsersController < ApplicationController
   end
 
   def search
+    params[:input] =  Regexp.new('.*' + params[:input] + '.*')
     users = User.or(:email => params[:input]).or(:first_name => params[:input]).or(:last_name => params[:input])
     render json: users
   end
