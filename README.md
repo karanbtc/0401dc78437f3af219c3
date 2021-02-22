@@ -1,5 +1,8 @@
 # README
 
+PostMan Collection link
+https://www.getpostman.com/collections/891558b22b7967d272dc
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
