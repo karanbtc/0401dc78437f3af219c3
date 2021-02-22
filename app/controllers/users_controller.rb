@@ -59,7 +59,7 @@ class UsersController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_user
-      @user = User.find(params[:id])
+      @user = User.where({id: params[:id].to_i}).try(:[],0)
     end
 
     def auto_increment
